@@ -1,0 +1,6 @@
+<% if @message %>
+$(".modal-body p").html('<%= escape_javascript @message %>')
+<% else %>
+$(".modal-body p").html('<%= escape_javascript render('/shared/error_messages', object:@contact) %>')
+<% end %>
+$('#newsletterModal').modal('show')

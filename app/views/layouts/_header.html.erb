@@ -1,0 +1,26 @@
+<!-- TOP NAV -->
+<header id="topNav">
+    <div class="container">
+        <!-- Mobile Menu Button -->
+        <button class="btn" data-toggle="collapse" data-target=".nav-main-collapse">
+            <i class="fa fa-bars"></i>
+        </button>
+        <!-- Logo text or image -->
+       <%= link_to image_tag('jhupro.png', {alt:'Jhupro', style:'height:50px;'}), root_path, class:'logo'%>
+        <!-- Top Nav -->
+
+        <div class="navbar-collapse nav-main-collapse collapse pull-right">
+            <nav class="nav-main mega-menu">
+                <ul class="nav nav-pills nav-main scroll-menu" id="topMain">
+                    <li class="<%=activeMenu(params[:action],'home')%>"><%= link_to 'Home', root_path %></li>
+                    <li class="<%=activeMenu(params[:action],'about')%>"><%= link_to 'About Us', about_path%></li>
+                    <li class="<%=activeMenu(params[:action],'new')%>"><%= link_to 'Contact', new_contact_path%></li>
+                    <li class="<%=activeMenu(params[:action],'career')%>"><%= link_to 'Careers', careers_path%></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- /Top Nav -->
+    </div>
+</header>
+<span id="header_shadow"></span>
+<!-- /TOP NAV -->

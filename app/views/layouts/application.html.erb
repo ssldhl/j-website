@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<%= render 'layouts/shim' %>
+<!--[if gt IE 9]><!--><html><!--<![endif]-->
+<head >
+
+    <meta charset="utf-8" />
+    <title><%= full_title(yield (:title)) %></title>
+    <meta name="keywords" content="jhupro, jhupro services, web, web app, website, website development, web development services, web application development, mobile application development, software services, it services, outsourcing nepal" />
+    <meta name="description" content="Jhupro is a web application development company focused on delivering professional, friendly and suitable applications." />
+    <meta name="author" content="jhupro" />
+    <!-- Open Graph -->
+    <meta property="og:description" content="Jhupro is a web application development company focused on delivering professional, friendly and suitable applications." />
+    <meta property='og:locale' content='en_US'/>
+    <meta property='og:url' content='http://www.jhupro.com'/>
+    <meta property='og:site_name' content='jhupro'/>
+    <meta property='og:type' content='website'/>
+    <link href="https://plus.google.com/110086904451751216460" rel="publisher" />
+    <%=favicon_link_tag 'favicon.ico'%>
+    <!-- mobile settings -->
+    <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
+    <!-- WEB FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800" rel="stylesheet" type="text/css" />
+    <!--/web fonts-->
+    <!-- style sheets-->
+    <%= stylesheet_link_tag "application", :media => "all" %>
+    <!--/style sheets-->
+    <!--javascripts-->
+    <%= javascript_include_tag "plugins/modernizr.min.js" %>
+    <script type="text/javascript">
+       (function() {
+           var po = document.createElement("script"); po.type = "text/javascript"; po.async = true;
+            po.src = "https://apis.google.com/js/plusone.js?publisherid=110086904451751216460";
+            var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(po, s);
+                 })();
+    </script>
+    <!--/javascripts-->
+    <%= csrf_meta_tags %>
+</head>
+<body>
+<%= render 'layouts/header' %>
+<!-- WRAPPER -->
+<div id="wrapper" >
+    <%= render 'layouts/messages'%>
+    <%= yield %>
+</div>
+<!-- /WRAPPER -->
+<%= render 'layouts/footer' %>
+
+<!-- javascripts -->
+<%= javascript_include_tag "application" %>
+<!-- /javascripts -->
+<%= render 'layouts/googleAnalytics' %>
+</body>
+</html>
