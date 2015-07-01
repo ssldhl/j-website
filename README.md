@@ -1,4 +1,4 @@
-# Jhupro Services
+# Website of J
 
 This is the web application for
-[*Jhupro Services: Always Online*](http://jhupro.com/).
+[*J*](http://jhupro.com/).
