@@ -1,14 +1,14 @@
 # config valid only for Capistrano 3.1
 lock '3.2.1'
 
-set :application, 'Jhupro'
-set :repo_url, 'git@bugs.jhupro.com:Jhupro/JhuproWebsite.git'
+set :application, 'j-website'
+set :repo_url, 'git@github.com:sushilthe/j-website.git'
 
 # Default branch is :master
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }.call
 
 # Default deploy_to directory is /var/www/my_app
-set :deploy_to, '/home/deployer/apps/jhupro_website'
+set :deploy_to, '/home/deployer/apps/j-website'
 
 # Default value for :scm is :git
 # set :scm, :git
@@ -33,7 +33,7 @@ set :deploy_to, '/home/deployer/apps/jhupro_website'
 
 # Default value for keep_releases is 5
 set :keep_releases, 2
-set :rvm_ruby_version, '1.9.3-p484@jhupro-website'
+set :rvm_ruby_version, '1.9.3-p484@j-website'
 namespace :deploy do
 
   desc 'Restart application'
